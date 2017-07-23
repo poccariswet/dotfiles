@@ -1,0 +1,24 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]] #toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'gosukiwi/vim-atom-dark'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+
+#[[plugins]]
+#repo = 'zchee/deoplete-go'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
