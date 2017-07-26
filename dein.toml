@@ -14,8 +14,8 @@ repo = 'gosukiwi/vim-atom-dark'
 [[plugins]]
 repo = 'fatih/vim-go'
 
-#[[plugins]]
-#repo = 'zchee/deoplete-go'
+[[plugins]]
+repo = 'zchee/deoplete-go'
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'

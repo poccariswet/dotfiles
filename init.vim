@@ -2,6 +2,15 @@ scriptencoding utf-8
 
 "escape insert mode
 inoremap <silent> jj <ESC>
+nnoremap <silent> <C-q> :QuickRun<CR>
+nnoremap <Leader>t :enew<CR>:call Term()<CR>
+tnoremap <silent> jj <C-\><C-n>
+
+
+function! Term()
+  call termopen('zsh', {'on_exit': 'OnExit'})
+endfunction
+
 
 "nvim
 set t_Co=256
@@ -39,6 +48,7 @@ let g:deoplete#sources#go#package_dot = 1
 
 "quick-run
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+
 
 "configs of auto insertion list prefix on markdown files
 augroup config
