@@ -22,3 +22,21 @@ repo = 'plasticboy/vim-markdown'
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
+
+#[[plugins]]
+#repo = 'zchee/nvim-go'
+#build = 'make'
+
+# 括弧自動閉じ
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+# Dockerfileシンタックス
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+# Git差分表示
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+

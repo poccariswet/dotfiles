@@ -4,6 +4,9 @@ scriptencoding utf-8
 inoremap <silent> jj <ESC>
 nnoremap <silent> <C-q> :QuickRun<CR>
 nnoremap <Leader>t :enew<CR>:call Term()<CR>
+nnoremap <silent> hh <S-g>
+
+"on terminal
 tnoremap <silent> jj <C-\><C-n>
 
 
