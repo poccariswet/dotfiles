@@ -39,4 +39,10 @@ repo = 'ekalinin/Dockerfile.vim'
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
+# Vue シンタックス
+[[plugins]]
+repo = 'posva/vim-vue'
 
+# js シンタックス
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
