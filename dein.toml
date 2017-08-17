@@ -46,3 +46,7 @@ repo = 'posva/vim-vue'
 # js シンタックス
 [[plugins]]
 repo = 'jelera/vim-javascript-syntax'
+
+#html/css
+[[plugins]]
+repo = "mattn/emmet-vim"
