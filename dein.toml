@@ -50,3 +50,7 @@ repo = 'jelera/vim-javascript-syntax'
 #html/css
 [[plugins]]
 repo = "mattn/emmet-vim"
+
+#NERDtree
+[[plugins]]
+repo = 'scrooloose/nerdtree'

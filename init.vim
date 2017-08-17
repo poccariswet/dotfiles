@@ -5,6 +5,7 @@ inoremap <silent> jj <ESC>
 nnoremap <silent> <C-q> :QuickRun<CR>
 nnoremap <Leader>t :enew<CR>:call Term()<CR>
 nnoremap <silent> hh <S-g>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 "on terminal
 tnoremap <silent> jj <C-\><C-n>
