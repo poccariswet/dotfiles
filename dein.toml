@@ -61,6 +61,3 @@ repo = 'marijnh/tern_for_vim'
 
 [[plugins]]
 repo = 'hokaccha/vim-html5validator'
-
-[[plugins]]
-repo =
