@@ -54,3 +54,13 @@ repo = "mattn/emmet-vim"
 #NERDtree
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+#js 補完
+[[plugins]]
+repo = 'marijnh/tern_for_vim'
+
+[[plugins]]
+repo = 'hokaccha/vim-html5validator'
+
+[[plugins]]
+repo =
