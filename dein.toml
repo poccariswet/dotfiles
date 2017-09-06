@@ -60,3 +60,11 @@ repo = 'hokaccha/vim-html5validator'
 
 [[plugins]]
 repo = 'simeji/winresizer'
+
+# c/c++ lang completion
+[[plugins]]
+repo = 'justmao945/vim-clang'
+
+# c/c++ lang formater
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
