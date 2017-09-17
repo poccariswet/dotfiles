@@ -56,7 +56,14 @@ repo = 'scrooloose/nerdtree'
 repo = 'marijnh/tern_for_vim'
 
 [[plugins]]
+repo='mattn/jscomplete-vim'
+
+[[plugins]]
 repo = 'hokaccha/vim-html5validator'
+
+# html5-tag-color
+[[plugins]]
+repo='othree/html5.vim'
 
 [[plugins]]
 repo = 'simeji/winresizer'
@@ -68,3 +75,11 @@ repo = 'justmao945/vim-clang'
 # c/c++ lang formater
 [[plugins]]
 repo = 'rhysd/vim-clang-format'
+
+# edit-config
+[[plugins]]
+repo='editorconfig/editorconfig-vim'
+
+#vim-node
+[[plugins]]
+repo='moll/vim-node'
