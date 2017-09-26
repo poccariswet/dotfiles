@@ -15,7 +15,12 @@ repo = 'gosukiwi/vim-atom-dark'
 repo = 'fatih/vim-go'
 
 [[plugins]]
+repo = 'neomake/neomake'
+
+[[plugins]]
 repo = 'zchee/deoplete-go'
+on_ft = 'go'
+
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
@@ -46,6 +51,7 @@ repo = 'jelera/vim-javascript-syntax'
 #html/css
 [[plugins]]
 repo = "mattn/emmet-vim"
+# C^y , 
 
 #NERDtree
 [[plugins]]
