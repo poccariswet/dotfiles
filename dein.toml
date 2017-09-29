@@ -21,6 +21,13 @@ repo = 'neomake/neomake'
 repo = 'zchee/deoplete-go'
 on_ft = 'go'
 
+#python deoplete
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+#protdef
+[[plugins]]
+repo = 'uarun/vim-protobuf'
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
