@@ -35,9 +35,9 @@ repo = 'plasticboy/vim-markdown'
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 
-# 括弧自動閉じ
+# 括弧自動閉じ, 括弧時の自動インデント
 [[plugins]]
-repo = 'Townk/vim-autoclose'
+repo = 'cohama/lexima.vim'
 
 # Dockerfileシンタックス
 [[plugins]]
