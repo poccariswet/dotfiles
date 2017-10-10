@@ -32,6 +32,10 @@ repo = 'uarun/vim-protobuf'
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 
+#git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 
