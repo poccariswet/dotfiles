@@ -100,3 +100,8 @@ repo='editorconfig/editorconfig-vim'
 #vim-node
 [[plugins]]
 repo='moll/vim-node'
+
+# cursor motion too easy
+[[plugins]]
+repo='easymotion/vim-easymotion'
+
