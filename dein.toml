@@ -105,3 +105,7 @@ repo='moll/vim-node'
 [[plugins]]
 repo='easymotion/vim-easymotion'
 
+# fish-syntax
+[[plugins]]
+repo='dag/vim-fish'
+
