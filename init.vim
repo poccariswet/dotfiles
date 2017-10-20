@@ -128,12 +128,17 @@ endif
 let &runtimepath = s:dein_repo_dir .",". &runtimepath
 " プラグイン読み込み＆キャッシュ作成
 let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/dein.toml'
+
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
+  let s:toml_dir  = $HOME . '/.config/nvim/dein/toml' 
+  let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml_file)
+  call dein#load_toml(s:toml_dir . '/dein_lazy.toml', {'lazy' : 1})
   call dein#end()
   call dein#save_state()
 endif
+
 " 不足プラグインの自動インストール
 if has('vim_starting') && dein#check_install()
   call dein#install()
