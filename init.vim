@@ -7,6 +7,7 @@ nnoremap <Leader>t :enew<CR>:call Term()<CR>
 nnoremap <silent> hh <S-g>
 nnoremap <C-n> :NERDTreeToggle<CR>
 vnoremap <silent> hh <S-g>
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
 "on terminal
