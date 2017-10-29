@@ -15,7 +15,7 @@ tnoremap <silent> jj <C-\><C-n>
 
 
 function! Term()
-  call termopen('zsh', {'on_exit': 'OnExit'})
+  call termopen('fish', {'on_exit': 'OnExit'})
 endfunction
 
 
@@ -117,6 +117,21 @@ endif
 augroup MyAutoCmd
   autocmd!
 augroup END
+
+
+"clang-format
+function! s:clang_format()
+  let now_line = line(".")
+  exec ":%! clang-format"
+  exec ":" . now_line
+endfunction
+
+if executable('clang-format')
+  augroup cpp_clang_format
+    autocmd!
+    autocmd BufWrite,FileWritePre,FileAppendPre *.[ch]pp call s:clang_format()
+  augroup END
+endif
 
 " dein settings {{{
 " dein自体の自動インストール
