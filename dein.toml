@@ -32,10 +32,6 @@ repo = 'uarun/vim-protobuf'
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 
-#git command
-[[plugins]]
-repo = 'tpope/vim-fugitive'
-
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 
@@ -97,3 +93,6 @@ repo='easymotion/vim-easymotion'
 [[plugins]]
 repo='dag/vim-fish'
 
+#複数カーソル
+[[plugins]]
+repo='terryma/vim-multiple-cursors'
