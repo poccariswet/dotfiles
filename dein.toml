@@ -96,3 +96,11 @@ repo='dag/vim-fish'
 #複数カーソル
 [[plugins]]
 repo='terryma/vim-multiple-cursors'
+
+#terraform
+[[plugins]]
+repo='hashivim/vim-terraform'
+
+#sanshiro 
+[[plugins]]
+repo='dennougorilla/azuki.vim'
