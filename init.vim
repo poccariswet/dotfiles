@@ -6,6 +6,7 @@ nnoremap <silent> <C-q> :QuickRun<CR>
 nnoremap <Leader>t :enew<CR>:call Term()<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 vnoremap <silent> hh <S-g>
+nnoremap <S-b> <S-i>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
