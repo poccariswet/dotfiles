@@ -30,9 +30,6 @@ repo = 'davidhalter/jedi-vim'
 repo = 'uarun/vim-protobuf'
 
 [[plugins]]
-repo = 'plasticboy/vim-markdown'
-
-[[plugins]]
 repo = 'thinca/vim-quickrun'
 
 # 括弧自動閉じ, 括弧時の自動インデント
@@ -64,18 +61,8 @@ repo = "mattn/emmet-vim"
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 
-#js 補完
-[[plugins]]
-repo = 'marijnh/tern_for_vim'
-
-[[plugins]]
-repo='mattn/jscomplete-vim'
-
 [[plugins]]
 repo = 'hokaccha/vim-html5validator'
-
-[[plugins]]
-repo = 'simeji/winresizer'
 
 # edit-config
 [[plugins]]
@@ -85,17 +72,9 @@ repo='editorconfig/editorconfig-vim'
 [[plugins]]
 repo='moll/vim-node'
 
-# cursor motion too easy
-[[plugins]]
-repo='easymotion/vim-easymotion'
-
 # fish-syntax
 [[plugins]]
 repo='dag/vim-fish'
-
-#複数カーソル
-[[plugins]]
-repo='terryma/vim-multiple-cursors'
 
 #terraform
 [[plugins]]
