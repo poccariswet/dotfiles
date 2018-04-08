@@ -48,10 +48,6 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'posva/vim-vue'
 
-# js シンタックス
-[[plugins]]
-repo = 'jelera/vim-javascript-syntax'
-
 #html/css
 [[plugins]]
 repo = "mattn/emmet-vim"
@@ -83,3 +79,16 @@ repo='hashivim/vim-terraform'
 #sanshiro 
 [[plugins]]
 repo='dennougorilla/azuki.vim'
+
+# js
+[[plugins]]
+repo = "pangloss/vim-javascript"
+
+[[plugins]]
+repo = "mattn/jscomplete-vim"
+for = 'javascript'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+
+
