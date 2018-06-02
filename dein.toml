@@ -91,4 +91,9 @@ for = 'javascript'
 [[plugins]]
 repo = 'jelera/vim-javascript-syntax'
 
+#swift
+[[plugins]]
+repo = 'keith/swift.vim'
 
+[[plugins]]
+repo = 'kballard/vim-swift'

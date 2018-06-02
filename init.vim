@@ -75,6 +75,7 @@ set expandtab
 set cursorline
 set cursorcolumn
 set smartindent
+set encoding=utf-8
 
 "vim-go
 let g:go_template_autocreate = 0
