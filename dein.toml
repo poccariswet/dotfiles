@@ -97,3 +97,7 @@ repo = 'keith/swift.vim'
 
 [[plugins]]
 repo = 'kballard/vim-swift'
+
+#solidity
+[[plugins]]
+repo = 'tomlion/vim-solidity'
