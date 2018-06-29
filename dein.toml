@@ -101,3 +101,7 @@ repo = 'kballard/vim-swift'
 #solidity
 [[plugins]]
 repo = 'tomlion/vim-solidity'
+
+#sbt syntax
+[[plugins]]
+repo = 'ktvoelker/sbt-vim'
