@@ -4,9 +4,8 @@ scriptencoding utf-8
 inoremap <silent> jj <ESC>
 nnoremap <silent> <C-q> :QuickRun<CR>
 nnoremap <Leader>t :enew<CR>:call Term()<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
-vnoremap <silent> hh <S-g>
 nnoremap <S-b> <S-i>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
@@ -94,34 +93,22 @@ let g:deoplete#sources#go#package_dot = 1
 "quick-run
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
 
-
-"configs of auto insertion list prefix on markdown files
-augroup config
-  autocmd!
-  autocmd FileType markdown inoremap <buffer><expr> <CR> (getline('.') =~ '^\s*-\s') ? '<CR>- ' : '<CR>'
-  autocmd FileType markdown nnoremap <buffer><expr> o (getline('.') =~ '^\s*-\s') ? 'o- ' : 'o'
-  autocmd FileType markdown inoremap <buffer><expr> <CR> (getline('.') =~ '^\s*\*\s') ? '<CR>* ' : '<CR>'
-  autocmd FileType markdown nnoremap <buffer><expr> o (getline('.') =~ '^\s*\*\s') ? 'o* ' : 'o'
-  autocmd BufNewFile,BufRead *.es6 set filetype=javascript
-augroup END
-
-
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
 
-if !&compatible
-  set nocompatible
-endif
-
-" reset augroup
-augroup MyAutoCmd
-  autocmd!
-augroup END
+"if !&compatible
+"  set nocompatible
+"endif
+"
+"" reset augroup
+"augroup MyAutoCmd
+"  autocmd!
+"augroup END
 
 
 " dein settings {{{
-" dein自体の自動インストール
+" dein auto install
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -142,7 +129,7 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-" 不足プラグインの自動インストール
+" plugins of not enought auto install
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif

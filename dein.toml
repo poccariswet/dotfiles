@@ -22,8 +22,8 @@ repo = 'zchee/deoplete-go'
 on_ft = 'go'
 
 #python deoplete
-[[plugins]]
-repo = 'davidhalter/jedi-vim'
+#[[plugins]]
+#repo = 'davidhalter/jedi-vim'
 
 #protdef
 [[plugins]]
@@ -47,11 +47,6 @@ repo = 'airblade/vim-gitgutter'
 # Vue シンタックス
 [[plugins]]
 repo = 'posva/vim-vue'
-
-#html/css
-[[plugins]]
-repo = "mattn/emmet-vim"
-# C^y , 
 
 #NERDtree
 [[plugins]]
@@ -105,3 +100,7 @@ repo = 'tomlion/vim-solidity'
 #sbt syntax
 [[plugins]]
 repo = 'derekwyatt/vim-sbt'
+
+#ruby syntax
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
