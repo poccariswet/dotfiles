@@ -67,4 +67,4 @@ endif
 "}}}
 
 syntax enable
-colorscheme atom-dark
+colorscheme molokai

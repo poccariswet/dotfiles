@@ -9,7 +9,7 @@ repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
 [[plugins]]
-repo = 'gosukiwi/vim-atom-dark'
+repo = 'tomasr/molokai'
 
 [[plugins]]
 repo = 'fatih/vim-go'
