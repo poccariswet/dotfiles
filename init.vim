@@ -4,56 +4,6 @@ scriptencoding utf-8
 inoremap <silent> jj <ESC>
 nnoremap <silent> <C-q> :QuickRun<CR>
 nnoremap <Leader>t :enew<CR>:call Term()<CR>
-nnoremap <S-b> <S-i>
-nnoremap <C-n> :NERDTreeToggle<CR>
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
-
-"on terminal
-tnoremap <silent> jj <C-\><C-n>
-
-
-function! Term()
-  call termopen('fish', {'on_exit': 'OnExit'})
-endfunction
-
-
-"comment-out
-vmap ,# :s/^/#/<CR>:nohlsearch<CR>
-vmap ,/ :s/^/\/\//<CR>:nohlsearch<CR>
-vmap ,> :s/^/> /<CR>:nohlsearch<CR>
-vmap ," :s/^/\"/<CR>:nohlsearch<CR>
-vmap ,% :s/^/%/<CR>:nohlsearch<CR>
-vmap ,! :s/^/!/<CR>:nohlsearch<CR>
-vmap ,; :s/^/;/<CR>:nohlsearch<CR>
-vmap ,- :s/^/--/<CR>:nohlsearch<CR>
-vmap ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;]//<CR>:nohlsearch<CR>
-
-" wrapping comments
-vmap ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>:nohlsearch<CR>
-vmap ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:nohlsearch<CR>
-vmap ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:nohlsearch<CR>
-vmap ,d :s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/<CR>:nohlsearch<CR>
-
-" block comments
-vmap ,b v`<I<CR><esc>k0i/*<ESC>`>j0i*/<CR><esc><ESC>
-vmap ,h v`<I<CR><esc>k0i<!--<ESC>`>j0i--><CR><esc><ESC>
-
-" NERDtree
-let g:NERDTreeIndicatorMapCustom = {
-			\ "Modified"  : "✹",
-			\ "Staged"    : "✚",
-			\ "Untracked" : "✭",
-			\ "Renamed"   : "➜",
-			\ "Unmerged"  : "═",
-			\ "Deleted"   : "✖",
-			\ "Dirty"     : "✗",
-			\ "Clean"     : "✔︎",
-			\ "Unknown"   : "?"
-			\ }
-let g:NERDTreeDirArrows = 1
-let NERDTreeWinSize=22
-
 
 "nvim
 set t_Co=256
@@ -74,7 +24,6 @@ set expandtab
 set cursorline
 set cursorcolumn
 set smartindent
-set encoding=utf-8
 
 "vim-go
 let g:go_template_autocreate = 0
@@ -90,25 +39,12 @@ let g:deoplete#sources#go#align_class = 1
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 let g:deoplete#sources#go#package_dot = 1
 
-"quick-run
-let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
-
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
 
-"if !&compatible
-"  set nocompatible
-"endif
-"
-"" reset augroup
-"augroup MyAutoCmd
-"  autocmd!
-"augroup END
-
-
 " dein settings {{{
-" dein auto install
+" dein自体の自動インストール
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -118,18 +54,13 @@ endif
 let &runtimepath = s:dein_repo_dir .",". &runtimepath
 " プラグイン読み込み＆キャッシュ作成
 let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/dein.toml'
-
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
-  let s:toml_dir  = $HOME . '/.config/nvim' 
-  let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml_file)
-  call dein#load_toml(s:toml_dir . '/dein_lazy.toml', {'lazy' : 1})
   call dein#end()
   call dein#save_state()
 endif
-
-" plugins of not enought auto install
+" 不足プラグインの自動インストール
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
