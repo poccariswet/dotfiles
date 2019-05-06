@@ -68,6 +68,7 @@ Plug 'wavded/vim-stylus'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
+Plug 'suan/vim-instant-markdown'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

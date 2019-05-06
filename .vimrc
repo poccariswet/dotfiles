@@ -5,6 +5,11 @@ nnoremap <S-b> <S-i>
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 tnoremap <silent> jj <C-\><C-n>
 
+function! Term()
+  call termopen('fish', {"on_exit": 'onExit'})
+  setlocal number norelativenumber
+endfunction
+
 set t_Co=256
 set termguicolors
 set number
@@ -13,7 +18,7 @@ set mouse=a
 set laststatus=2
 set list "Show space char
 set listchars=tab:»\ ,trail:-,extends:»,precedes:«,nbsp:% "space 対応
-set clipboard+=unnamed
+set clipboard=unnamed,autoselect
 set ruler "カーソルが何行目の何列目に置かれているかを表示
 set autoindent
 set tabstop=2
@@ -43,9 +48,7 @@ let g:airline_theme = 'solarized'
 let g:airline_solarized_bg = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 
-"cursorの形状を変える
-let &t_SI = "\e]50;CursorShape=1\x7"
-let &t_EI = "\e]50;CursorShape=0\x7"
+" let g:gist_use_password_in_gitconfig = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -58,6 +61,11 @@ Plug 'cohama/lexima.vim'
 Plug 'simeji/winresizer'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'uarun/vim-protobuf'
+Plug 'dag/vim-fish'
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'suan/vim-instant-markdown'
 
 call plug#end()
 
