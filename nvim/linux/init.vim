@@ -50,6 +50,15 @@ let g:airline_solarized_bg = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1 " display buffer number on tab
 
+"rust fmt auto
+let g:rustfmt_autosave = 1
+" rust completion
+let g:racer_cmd = expand('~/.cargo/bin/racer')
+" " show the complete function definition (e.g. its arguments and return type), enable the experimental completer
+let g:racer_experimental_completer = 1
+" " insert the parenthesis in the completion
+let g:racer_insert_paren = 1
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
@@ -66,9 +75,8 @@ Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
 Plug 'wavded/vim-stylus'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'mattn/gist-vim'
-Plug 'mattn/webapi-vim'
-Plug 'suan/vim-instant-markdown'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
