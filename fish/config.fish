@@ -11,12 +11,14 @@ set -x PATH "/usr/local/bin" $PATH
 # golang
 set -x GOPATH ~/go
 set -x PATH $GOPATH/bin $PATH
+
+# rust
+set -x PATH $HOME/.cargo/bin $PATH
+
 # python
 set -x PATH $HOME/.pyenv/shims $PATH
 pyenv init - | source
-# ruby
-set -x PATH $HOME/.rbenv/shims $PATH
-rbenv init - | source
+
 #node
 set -x NODE_PATH /usr/local/lib/node_modules
 
