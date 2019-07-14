@@ -6,12 +6,11 @@ set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_color_branch red
 
 # Status Chars
-set __fish_git_prompt_char_stagedstate (set_color yellow)'✔︎'(set_color normal)
-set __fish_git_prompt_char_dirtystate (set_color yellow)'✔︎'(set_color normal)
-set __fish_git_prompt_char_untrackedfiles (set_color yellow)'✔︎'(set_color normal)
+set __fish_git_prompt_char_stagedstate (set_color brwhite)'✔︎'(set_color normal)
+set __fish_git_prompt_char_dirtystate (set_color green)'✔︎'(set_color normal)
+set __fish_git_prompt_char_untrackedfiles (set_color magenta)'✔︎'(set_color normal)
 set __fish_git_prompt_char_stashstate (set_color yellow)'✔︎'(set_color normal)
-set __fish_git_prompt_char_upstream_ahead (set_color yellow)'✔︎'(set_color normal)
-set __fish_git_prompt_char_upstream_behind '-'
+set __fish_git_prompt_char_upstream_ahead (set_color bryellow)'✔︎'(set_color normal)
 
 function fish_prompt
   set _status $status
