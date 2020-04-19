@@ -79,7 +79,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   let g:deoplete#enable_at_startup = 1
-  Plug 'zchee/deoplete-go', { 'tag': '*' }
+  Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
