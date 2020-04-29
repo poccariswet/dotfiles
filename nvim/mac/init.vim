@@ -56,6 +56,8 @@ let g:racer_experimental_completer = 1
 " " insert the parenthesis in the completion
 let g:racer_insert_paren = 1
 
+let g:deoplete#sources#go#gocode_binary = expand('~/go/bin/gocode')
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
@@ -70,21 +72,19 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
-Plug 'wavded/vim-stylus'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  let g:deoplete#enable_at_startup = 1
   Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
