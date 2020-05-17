@@ -2,7 +2,8 @@ CONFIG_HOME ?= $(HOME)/.config
 
 .PHONY: install
 install:
-	curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimagechmod u+x nvim.appimage
+	curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+	chmod u+x nvim.appimage
 	./nvim.appimage
 	mkdir -p $(CONFIG_HOME)/nvim
 	ln -s $(CURDIR)/init.vim $(CONFIG_HOME)/nvim/init.vim
